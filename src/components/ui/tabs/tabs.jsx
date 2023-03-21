@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import { WrapperButtons, ButtonActive, Button, Content } from "./style";
+import { WrapperButtons, ButtonActiveTabs, ButtonTabs, Content } from "./style";
 
 function Tabs({ tabs }) {
-  const [ currentIndex, getCurrentIndex ] = useState(0);
+  const [ currentIndex, setCurrentIndex ] = useState(0);
   return (
     <div>
       <WrapperButtons>
         {tabs.map((tab, index) => {
           if(currentIndex === index) {
             return (
-            <ButtonActive type="button" key={index}>
+            <ButtonActiveTabs type="button" key={index}>
               {tab.title}
-            </ButtonActive>
+            </ButtonActiveTabs>
             );
           }
           return (
-            <Button type="button" key={index} onClick={() => getCurrentIndex(index)}>{tab.title}</Button>
+            <ButtonTabs type="button" key={index} onClick={() => setCurrentIndex(index)}>{tab.title}</ButtonTabs>
           );
         })}
       </WrapperButtons>

@@ -3,4 +3,5 @@ export const theme = {
   colorWhite: "#ffffff",
   colorActiveLink: "#2cab15",
   indent: "50px",
+  indentMobile: "20px",
 };

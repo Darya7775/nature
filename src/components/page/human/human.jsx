@@ -15,8 +15,8 @@ import {
 
 function Human({ impacts }) {
   const description2 = useRef(null);
-  const [isActive, getActive] = useState(false);
-  const [current, getCurrent] = useState(0);
+  const [isActive, setActive] = useState(false);
+  const [current, setCurrent] = useState(0);
   return (
     <HumanSection>
       <HumanTitle as="h2">Human Impacts on the Environment</HumanTitle>
@@ -35,7 +35,7 @@ function Human({ impacts }) {
                   <HumanTitleItem as="h3">{impact.title}</HumanTitleItem>
                   <HumanText dangerouslySetInnerHTML={{__html: impact.description1}} />
                   <HumanTextHidden ref={description2} dangerouslySetInnerHTML={{__html: impact.description2}} />
-                  <HumanButton onClick={() => getActive(!isActive)}>hide</HumanButton>
+                  <HumanButton onClick={() => setActive(!isActive)}>hide</HumanButton>
                 </HumanWrapper>
               </HumanItem>
             );
@@ -53,8 +53,8 @@ function Human({ impacts }) {
                 <HumanText dangerouslySetInnerHTML={{__html: impact.description1}} />
                 <HumanButton
                   onClick={() => {
-                    getActive(true);
-                    getCurrent(index);
+                    setActive(true);
+                    setCurrent(index);
                 }}>learn more</HumanButton>
               </HumanWrapper>
             </HumanItem>

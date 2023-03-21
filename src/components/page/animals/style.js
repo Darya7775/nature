@@ -1,30 +1,35 @@
 import styled from "styled-components";
 import Title from "/src/components/ui/title/title";
 
-export const AnimalsSection = styled.section `
+export const AnimalsSection = styled.section`
   width: 100%;
   padding: 20px ${(props) => props.theme.indent};
+
+  @media (max-width: 48em) {
+    padding: 20px ${(props) => props.theme.indentMobile} 40px;
+  }
 `;
 
-export const ListAnimals = styled.ul `
+export const ListAnimals = styled.ul`
   margin: 0;
   padding: 0;
 
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 
-  @media (min-width: 48em) {
-    grid-template-columns: 1fr 1fr
+  @media (max-width: 48em) {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 `;
 
-export const AnimalsTitle = styled(Title) `
+export const AnimalsTitle = styled(Title)`
   margin: 0 0 30px;
 `;
 
-export const LiAnimals = styled.li `
+export const LiAnimals = styled.li`
   position: relative;
 
   overflow: hidden;
@@ -38,11 +43,11 @@ export const LiAnimals = styled.li `
   }
 `;
 
-export const TitleLiAnimals = styled(Title) `
+export const TitleLiAnimals = styled(Title)`
   margin: 0 0 10px;
 `;
 
-export const ImgAnimals = styled.img `
+export const ImgAnimals = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;

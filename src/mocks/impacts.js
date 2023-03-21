@@ -50,7 +50,7 @@ const impacts = [
     <p>Wildfires also help keep ecosystems healthy. They can kill insects and diseases that harm trees. By clearing scrub and underbrush, fires can make way for new grasses, herbs, and shrubs that provide food and habitat for animals and birds. At a low intensity, flames can clean up debris and underbrush on the forest floor, add nutrients to the soil, and open up space to let sunlight through to the ground. That sunlight can nourish smaller plants and give larger trees room to grow and flourish.</p>
 
     <p>While many plants and animals need and benefit from wildfires, climate change has left some ecosystems more susceptible to flames, especially in the southwest United States. Warmer temperatures have intensified drought and dried out forests. The historic practice of putting out all fires also has caused an unnatural buildup of shrubs and debris, which can fuel larger and more intense blazes.</p>
-    <p><b>source: </b>https://education.nationalgeographic.org </p>`
+    <p><b>source: </b>https://nationalgeographic.org </p>`
   },
   {
     title: 'Pollution',
@@ -66,7 +66,7 @@ const impacts = [
     <p>Pollution is a global problem. Although urban areas are usually more polluted than the countryside, pollution can spread to remote places where no people live. For example, pesticides and other chemicals have been found in the Antarctic ice sheet. In the middle of the northern Pacific Ocean, a huge collection of microscopic plastic particles forms what is known as the Great Pacific Garbage Patch.</p>
 
     <p>Air and water currents carry pollution. Ocean currents and migrating fish carry marine pollutants far and wide. Winds can pick up radioactive material accidentally released from a nuclear reactor and scatter it around the world. Smoke from a factory in one country drifts into another country.</p>
-    <p><b>source: </b>https://education.nationalgeographic.org </p>`,
+    <p><b>source: </b>https://nationalgeographic.org </p>`,
   },
   {
     title: 'Smog',
@@ -82,7 +82,7 @@ const impacts = [
     <p>Smog is unhealthy to humans and animals, and it can kill plants. Smog is also ugly. It makes the sky brown or gray. Smog is common in big cities with a lot of industry and traffic. Cities located in basins surrounded by mountains may have smog problems because the smog is trapped in the valley and cannot be carried away by wind. Los Angeles, California, United States, and Mexico City, Mexico, both have high smog levels partly because of this kind of landscape.</p>
 
     <p>Many countries, including the United States, have created laws to reduce smog. Some laws include restrictions on what chemicals a factory can release into the atmosphere, or when the factory can release them. Some communities have "burn days" when residents can burn waste such as leaves in their yard. These limits on chemicals released into the air reduce the amount of smog.</p>
-    <p><b>source: </b>https://education.nationalgeographic.org </p>`,
+    <p><b>source: </b>https://nationalgeographic.org </p>`,
   },
   {
     title: 'Point Source and Nonpoint Sources of Pollution',
@@ -106,7 +106,7 @@ const impacts = [
     <p>Airborne pollutants are major contributors to acid rain. It forms in the atmosphere when sulfur dioxide and nitrogen oxides combine with water. Because acid rain results from the long-range movement of those pollutants from many factories and power plants, it is considered nonpoint-source pollution.</p>
 
     <p>In the United States, the Clean Air Act and the Clean Water Act have helped to limit both point-source and nonpoint-source pollution. Thanks to these two legislative initiatives, in effect for some 50 years now, America’s air and water are cleaner today than they were for most of the 20th century.</p>
-    <p><b>source: </b>https://education.nationalgeographic.org </p>`,
+    <p><b>source: </b>https://nationalgeographic.org </p>`,
   },
   {
     title: 'Noise Pollution',
@@ -122,7 +122,7 @@ const impacts = [
     <p>Noise pollution also impacts the health and well-being of wildlife. Studies have shown that loud noises can cause caterpillars' dorsal vessels (the insect equivalent of a heart) to beat faster, and cause bluebirds to have fewer chicks. Animals use sound for a variety of reasons, including to navigate, find food, attract mates, and avoid predators. Noise pollution makes it difficult for them to accomplish these tasks, which affects their ability survive.</p>
 
     <p>Increasing noise is not only affecting animals on land, it is also a growing problem for those that live in the ocean. Ships, oil drills, sonar devices, and seismic tests have made the once tranquil marine environment loud and chaotic. Whales and dolphins are particularly impacted by noise pollution. These marine mammals rely on echolocation to communicate, navigate, feed, and find mates, and excess noise interferes with their ability to effectively echolocate.</p>
-    <p><b>source: </b>https://education.nationalgeographic.org </p>`,
+    <p><b>source: </b>https://nationalgeographic.org </p>`,
   },
   {
     title: 'Runoff',
@@ -140,7 +140,7 @@ const impacts = [
     <p>Nonpoint source pollution is any source where runoff does not go directly into a waterway. Nonpoint sources of runoff can be large urban, suburban, or rural areas. In these areas, rainwater and irrigation wash chemicals into local streams. Runoff from nonpoint sources includes lawn fertilizer, car exhaust, and even spilled gasoline from a car. Farms are a huge nonpoint source of runoff, as rainwater and irrigation drain fertilizers and pesticides into bodies of water.</p>
 
     <p>Impervious surfaces, or surfaces that can't absorb water, increase runoff. Roads, sidewalks, and parking lots are impervious surfaces. Materials as diverse as car-washing soaps, litter, and spilled gas from a gas station all become runoff.</p>
-    <p><b>source: </b>https://education.nationalgeographic.org </p>`,
+    <p><b>source: </b>https://nationalgeographic.org </p>`,
   },
   {
     title: 'Deforestation',
