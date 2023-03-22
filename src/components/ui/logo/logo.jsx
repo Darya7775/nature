@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "/src/assets/logo.svg";
 import logoMobile from "/src/assets/logo-dodecaeder.svg";
-import { useMactchMedia } from "/src/hooks/use-match-media";
+import { useMactchMedia } from "/src/hooks/use_match_media";
 import { Link } from "react-router-dom";
 
 function Logo() {

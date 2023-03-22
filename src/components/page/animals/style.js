@@ -3,11 +3,6 @@ import Title from "/src/components/ui/title/title";
 
 export const AnimalsSection = styled.section`
   width: 100%;
-  padding: 20px ${(props) => props.theme.indent};
-
-  @media (max-width: 48em) {
-    padding: 20px ${(props) => props.theme.indentMobile} 40px;
-  }
 `;
 
 export const ListAnimals = styled.ul`

@@ -3,11 +3,7 @@ import Title from "/src/components/ui/title/title";
 import { Button } from "/src/components/ui/button/button";
 
 export const HumanSection = styled.section`
-  padding: 40px ${(props => props.theme.indent)};
-
-  @media (max-width: 48em) {
-    padding: 20px ${(props) => props.theme.indentMobile} 40px;
-  }
+  width: 100%;
 `;
 
 export const HumanList = styled.ul`
@@ -89,6 +85,10 @@ export const HumanButton = styled(Button)`
     color: ${(props) => props.theme.colorWhite};
     background-color: ${(props) => props.theme.colorActiveLink};
     border: 2px solid ${(props) => props.theme.colorActiveLink};
+  }
+
+  @media (max-width: 64em) {
+    width: 35%;
   }
 
   @media (max-width: 48em) {
