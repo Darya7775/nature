@@ -6,8 +6,7 @@
   "author": "Stolyarova Darya",
   "homepage": "https://darya7775.github.io/nature",
   "scripts": {
-    "dev": "cross-env NODE_ENV=production gulp dev",
-    "build": "webpack server --mode production",
+    "build": "webpack --mode production",
     "start": "webpack server --mode development",
     "webp": "gulp webp",
     "imagemin": "gulp imagemin",
@@ -59,6 +58,7 @@
     "babel-loader": "^9.1.2",
     "browser-sync": "^2.29.0",
     "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "del": "^7.0.0",
     "eslint": "^8.35.0",

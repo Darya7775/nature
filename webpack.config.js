@@ -6,11 +6,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const production = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  entry: { main: path.resolve(__dirname, './src/index.js') },
+  entry: {
+    main: path.resolve(__dirname, './src/index.js')
+  },
   output: {
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, 'build'),
     filename: production ? '[name].[contenthash].js' : '[name].js',
-    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -51,10 +52,10 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, 'build'),
     },
     compress: true,
-    port: 3000,
+    port: 3001,
     historyApiFallback: true,
     open: true,
     hot: true,

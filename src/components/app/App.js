@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "/src/components/base/layout/layout";
 import Main from "/src/components/page/main/main";
 import Human from "/src/components/page/human/human";
@@ -16,7 +16,7 @@ import imagesBackground from "/src/mocks/background_main";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <GlobalStyles />
       <ScrollToTop />
       <Routes>
@@ -32,6 +32,6 @@ export default function App() {
           <Route path="human" element={<Human impacts={impacts}/>} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

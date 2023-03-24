@@ -1,11 +1,11 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import {deleteAsync} from 'del';
+import del from 'del';
 import {optimizeSvg, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
 const server = browserSync.create();
 
-const clean = () => deleteAsync('build');
+const clean = () => del('build');
 
 const syncServer = () => {
   server.init({
@@ -17,11 +17,11 @@ const syncServer = () => {
     ui: false,
   });
 
-  gulp.watch('public/**.html', gulp.series(refresh));
-  gulp.watch('src/img/**/*.svg', gulp.series(refresh));
-  gulp.watch('src/img/**/*.{png,jpg,webp}', gulp.series(refresh));
+  gulp.watch('src/js/**/*.{js,json}', gulp.series(compileScripts, refresh));
+  gulp.watch('src/assets/**/*.svg', gulp.series(copySvg, refresh));
+  gulp.watch('src/assets/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
 
-  gulp.watch('src/favicon/**', gulp.series(refresh));
+  gulp.watch('src/favicon/**', gulp.series(copy, refresh));
 };
 
 const refresh = (done) => {
@@ -29,8 +29,8 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, gulp.parallel(optimizePng, optimizeJpg, optimizeSvg));
-const dev = gulp.series(clean, gulp.parallel(optimizePng, optimizeJpg, optimizeSvg), syncServer);
-const start = gulp.series(clean, syncServer);
+const build = gulp.series(clean, copy, gulp.parallel(compileScripts, optimizePng, optimizeJpg, optimizeSvg));
+const dev = gulp.series(clean, copy, gulp.parallel(compileScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
+const start = gulp.series(clean, copy, gulp.parallel(compileScripts), syncServer);
 
 export { createWebp as webp, build, start, dev};
