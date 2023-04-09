@@ -1,21 +1,21 @@
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export const Section = styled.section `
+export const Section = styled.section`
   width: 100%;
 `;
 
-export const StyleSwiper = styled(Swiper) `
+export const StyleSwiper = styled(Swiper)`
   width: 100%;
   height: 100vh;
   position: relative;
 `;
 
-export const StyleSwiperSlide = styled(SwiperSlide) `
+export const StyleSwiperSlide = styled(SwiperSlide)`
   display: grid;
 `;
 
-export const AutoplayProgress = styled.div `
+export const AutoplayProgress = styled.div`
   position: absolute;
   right: 16px;
   bottom: 16px;
@@ -29,7 +29,7 @@ export const AutoplayProgress = styled.div `
   color: #333333;
 `;
 
-export const SvgAutoplay = styled.svg `
+export const SvgAutoplay = styled.svg`
   --progress: 0;
   position: absolute;
   left: 0;
@@ -45,21 +45,8 @@ export const SvgAutoplay = styled.svg `
   transform: rotate(-90deg);
 `;
 
-export const Img = styled.img `
+export const Img = styled.img`
   width: 100%;
   height: 100vh;
   grid-area: 1/1/-1/-1;
 `;
-
-// export const Text = styled.p `
-//   width: 70%;
-//   font-size: 2em;
-//   line-height: 1.5em;
-//   padding: 10%;
-//   margin: 0;
-//   grid-area: 1/1/-1/-1;
-//   align-self: center;
-//   justify-self: start;
-//   text-shadow: 0 0 6px #000000;
-//   color: #0fdec1;
-// `;

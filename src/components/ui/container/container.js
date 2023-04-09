@@ -3,10 +3,10 @@ import styled from "styled-components";
 const Container = styled.div`
   max-width: 2600px;
   margin: 0 auto;
-  padding: 50px ${(props => props.theme.indent)};
+  padding: 50px ${(props) => props.theme.indent};
 
   @media(max-width: 90em) {
-    padding: 40px ${(props => props.theme.indentDesktop)};
+    padding: 40px ${(props) => props.theme.indentDesktop};
   }
 
   @media(max-width: 64em) {
